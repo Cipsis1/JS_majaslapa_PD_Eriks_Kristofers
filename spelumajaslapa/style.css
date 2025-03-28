@@ -1,0 +1,22 @@
+h1{
+    text-align: center;
+}
+
+/* .laiks {
+    display: flex;
+    justify-content:flex-end;
+    padding: 10px;
+}
+.h2 {
+    display: flex;
+    justify-content:flex-start;
+    padding: 10px;
+} */
+
+
+.zemteksts      { 
+    display:block;margin:10px;
+}
+.zemteksts span {
+     display:block;float:right;width:15%;margin-left:10px;
+    }
