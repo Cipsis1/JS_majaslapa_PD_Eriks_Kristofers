@@ -22,4 +22,3 @@ function laiks(){
       text =  person ;
     }
     document.getElementById("alert").innerHTML = text;
-  
