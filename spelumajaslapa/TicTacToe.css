@@ -5,11 +5,11 @@ h1{
 
 .board {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
-    gap: 5px;
-    margin: 20px auto;
-    width: 320px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 10px;
+    margin: 10px auto;
+    width: 475px;
     height: 320px;
   }
   .cell {
@@ -17,11 +17,11 @@ h1{
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    background-color: #f0f0f0;
+    background-color: #8a81db;
     cursor: pointer;
     border: 2px solid #333;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
   .cell.taken {
     cursor: not-allowed;
@@ -58,9 +58,23 @@ p{
 }
 footer{
     text-align: center;
-    margin-top: 250px;
+    margin-top: 200px;
 }
 
 body{
     background-color: #a0f4fc;
+}
+
+.poga1{
+    background-color: #7d7d7d;
+    border: none;
+    color: white;
+    padding: 30px 64px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transform: translateX(1600px) translateY(200px);
 }
