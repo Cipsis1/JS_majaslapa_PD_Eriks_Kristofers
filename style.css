@@ -1,0 +1,33 @@
+body{
+    background-color: #a0f4fc;
+}
+h1{
+    text-align: center;
+}
+.zemteksts      { 
+    display:block;
+    margin-left:10px;
+    
+}
+.zemteksts span {
+     display:block;
+     float:right;
+     width:25%;
+     margin-left:10px;
+}
+p{
+    font-size: 20px;
+    display:block;
+    float:right;
+    width:60%;
+    margin-left:10px;
+    margin-top: 4px;
+}
+h3{
+    font-size: 20px;
+    display:block;
+    float:right;
+    width:60%;
+    margin-left:10px;
+    margin-top: -23px;
+}
