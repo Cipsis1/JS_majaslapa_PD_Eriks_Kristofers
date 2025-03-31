@@ -1,4 +1,3 @@
-
 let board = ['', '', '', '', '', '', '', '', ''];
     let currentPlayer = 'X';  // Player is 'X', computer is 'O'
     let gameOver = false;
@@ -59,7 +58,7 @@ let board = ['', '', '', '', '', '', '', '', ''];
       for (const [a, b, c] of winPatterns) {
         if (board[a] && board[a] === board[b] && board[a] === board[c]) {
           gameOver = true;
-          document.querySelector('.message').textContent = `${board[a]} Wins!`;
+          document.querySelector('.message').textContent = `${board[a]} Uzvar!`;
           setTimeout(restartGame, 2000);
           return;
         }
@@ -67,7 +66,7 @@ let board = ['', '', '', '', '', '', '', '', ''];
 
       if (board.every(cell => cell)) {
         gameOver = true;
-        document.querySelector('.message').textContent = 'It\'s a Draw!';
+        document.querySelector('.message').textContent = 'Neizšķirts!';
         setTimeout(restartGame, 2000);
       }
     } 
@@ -75,7 +74,7 @@ let board = ['', '', '', '', '', '', '', '', ''];
         board = ['', '', '', '', '', '', '', '', ''];
         currentPlayer = 'X';
         gameOver = false;
-        document.querySelector('.message').textContent = 'Your Turn!';
+        document.querySelector('.message').textContent = 'Tavs Gājiens!';
         renderBoard();
       }
 
@@ -98,20 +97,3 @@ function laiks(){
 
 laiks();
 setInterval(laiks,1000)
-
-
-
-// const now = new Date();
-// const pad = num =>num.toString().padStart(2,'0')
-
-// const gads = now.getFullYear();
-// const menesis = pad(now.getMonth()+1);
-// const diena = pad(now.getDate());
-// const stundas = pad(now.getHours());
-// const minutes = pad(now.getMinutes());
-// const sekundes  = pad(now.getSeconds());
-
-// let datums = (`${gads}–${menesis}–${diena} ${stundas}:${minutes}:${sekundes}`)
-
-// document.getElementById("demo").innerHTML = datums;
-
