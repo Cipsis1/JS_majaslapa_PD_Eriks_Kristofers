@@ -12,13 +12,14 @@ function laiks(){
    
   laiks();
   setInterval(laiks,1000)
- 
 
     let text;
-    let person = prompt("Please enter your name:");
-    if (person == null || person == "") {
+    let person = prompt("Please enter your name (max 20 characters):");
+    
+    if (person == null || person.trim() === "") {
       text = "Speletajs_132";
     } else {
-      text =  person ;
+      text = person.substring(0, 20); 
     }
     document.getElementById("alert").innerHTML = text;
+    

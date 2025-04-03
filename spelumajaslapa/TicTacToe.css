@@ -2,7 +2,6 @@ h1{
     text-align: center;
 }
 
-
 .board {
     display: grid;
     grid-template-columns: repeat(3, 150px);
@@ -34,7 +33,7 @@ h1{
   h1{
     text-align: center;
 }
-.zemteksts      {
+.coins      {
     display:block;
     margin:10px;
    
