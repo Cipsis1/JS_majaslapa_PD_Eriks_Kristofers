@@ -1,0 +1,84 @@
+h1{
+    text-align: center;
+}
+
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+     grid-template-rows: repeat(3, 150px);
+     gap: 10px;
+     margin: 10px auto;
+     width: 475px;
+    height: 320px;
+  }
+  .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    background-color: #8a81db;
+    cursor: pointer;
+    border: 2px solid #333;
+    width: 150px;
+    height: 150px;
+  }
+  .cell.taken {
+    cursor: not-allowed;
+  }
+  .message {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  h1{
+    text-align: center;
+}
+.zemteksts      {
+    display:block;
+    margin:10px;
+   
+}
+.zemteksts span {
+     display:block;
+     float:right;
+     width:25%;
+     margin-left:10px;
+}
+p{
+    font-size: 20px;
+    display:block;
+    float:right;
+    width:60%;
+    margin-left:10px;
+    margin-top: 4px;
+}
+#laiks{
+    font-weight: bold;
+}
+footer{
+    text-align: center;
+    margin-top: 200px;
+}
+
+body{
+    background-color: #a0f4fc;
+}
+
+.poga1{
+  background-color: #7d7d7d;
+  border: none;
+  color: white;
+  padding: 30px 64px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transform: translateX(1600px) translateY(200px);
+}
+
+.speletajs{
+  transform: translateX(1600px) translateY(10px);
+}
