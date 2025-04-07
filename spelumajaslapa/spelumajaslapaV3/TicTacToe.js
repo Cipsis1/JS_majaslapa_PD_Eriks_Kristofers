@@ -1,9 +1,8 @@
 
 let board = ['', '', '', '', '', '', '', '', ''];
-    let currentPlayer = 'X';  // Player is 'X', computer is 'O'
+    let currentPlayer = 'X'; 
     let gameOver = false;
 
-    // Render board
     function renderBoard() {
       const boardElement = document.getElementById('board');
       boardElement.innerHTML = '';
@@ -19,7 +18,6 @@ let board = ['', '', '', '', '', '', '', '', ''];
       });
     }
 
-    // Handle player move
     function handlePlayerMove(index) {
       if (gameOver || board[index]) return;
 
@@ -33,10 +31,9 @@ let board = ['', '', '', '', '', '', '', '', ''];
       }
     }
 
-    // Computer random move
     function computerMove() {
       let availableMoves = board.map((cell, index) => cell === '' ? index : null).filter(index => index !== null);
-      if (availableMoves.length === 0) return; // No more moves available, game is over
+      if (availableMoves.length === 0) return;
 
       const randomMove = availableMoves[Math.floor(Math.random() * availableMoves.length)];
       board[randomMove] = 'O';
@@ -48,12 +45,12 @@ let board = ['', '', '', '', '', '', '', '', ''];
       }
     }
 
-    // Check for winner
+
     function checkWinner() {
       const winPatterns = [
-        [0, 1, 2], [3, 4, 5], [6, 7, 8], // Horizontal
-        [0, 3, 6], [1, 4, 7], [2, 5, 8], // Vertical
-        [0, 4, 8], [2, 4, 6]             // Diagonal
+        [0, 1, 2], [3, 4, 5], [6, 7, 8],
+        [0, 3, 6], [1, 4, 7], [2, 5, 8], 
+        [0, 4, 8], [2, 4, 6]             
       ];
 
       for (const [a, b, c] of winPatterns) {
@@ -84,7 +81,6 @@ let board = ['', '', '', '', '', '', '', '', ''];
         renderBoard();
       }
 
-    // Start the game
     renderBoard();
 
 function laiks(){
@@ -111,12 +107,10 @@ if (points === null) {
   points = parseInt(points);
 }
 
-// Update the points display
 function updatePointsDisplay() {
   document.getElementById('punkti').innerHTML = points;
 }
 
-// Add points
 function addPoints(amount) {
   points += amount;
   localStorage.setItem('points', points);
@@ -125,10 +119,9 @@ function addPoints(amount) {
 
 function subtractPoints(amount) {
     points -= amount;
-    if (points < 0) points = 0; // Ensure points don't go below 0
+    if (points < 0) points = 0; 
     localStorage.setItem('points', points);
     updatePointsDisplay();
   }
 
-// Initial points display update
 updatePointsDisplay();

@@ -92,12 +92,10 @@ if (points === null) {
   points = parseInt(points);
 }
 
-// Update the points display
 function updatePointsDisplay() {
   document.getElementById('punkti').innerHTML = points;
 }
 
-// Add points
 function addPoints(amount) {
   points += amount;
   localStorage.setItem('points', points);
@@ -106,11 +104,10 @@ function addPoints(amount) {
 
 function subtractPoints(amount) {
     points -= amount;
-    if (points < 0) points = 0; // Ensure points don't go below 0
+    if (points < 0) points = 0;
     localStorage.setItem('points', points);
     updatePointsDisplay();
   }
 
-// Initial points display update
 updatePointsDisplay();
   
