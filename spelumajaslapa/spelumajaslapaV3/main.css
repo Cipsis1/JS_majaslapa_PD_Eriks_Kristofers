@@ -1,0 +1,92 @@
+body{
+    background-color: #a0f4fc;
+}
+h1{
+    text-align: center;
+}
+
+.konteiners {
+    position: relative;
+}
+.punkti, .punktiDisplay, .datums, .datumsDisplay, .speletajs, .speletajsDisplay {
+    position: absolute;
+    font-size: 30px;
+}
+.punkti{
+    transform: translateX(50px);
+    margin-top: 10px;
+}
+.punktiDisplay{
+    transform: translateX(150px);
+    margin-top: 10px;
+}
+.datums{
+    transform: translateX(1500px);
+    margin-top: 10px;
+}
+.datumsDisplay{
+    transform: translateX(1720px);
+    margin-top: 10px;
+}
+.speletajs{
+    transform: translateX(1500Px);
+    margin-top: 40px;
+}
+.speletajsDisplay{
+    transform: translateX(1630px);
+    margin-top: 40px;
+}
+.TicTacToe, .Higher {
+    position: absolute;
+    font-size: 40px;
+}
+.TicTacToe {
+    transform: translateX(550px);
+    margin-top: 70px;
+}
+.Higher {
+    transform: translateX(1150px);
+    margin-top: 70px;
+}
+
+.krustinuPoga{
+    background-color: #7d7d7d;
+    border: solid;
+    border-width: 5px;
+    border-color: rgb(41, 10, 84);
+    color: white;
+    padding: 200px 200px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transform: translateX(420px) translateY(150px);
+    background-image: url('img/KrustiniUnNullites.png');
+    background-size: 400px 400px;
+    background-position:center;
+}
+
+.higherPoga{
+    background-color: #7d7d7d;
+    border: solid;
+    border-width: 5px;
+    border-color: rgb(41, 10, 84);
+    color: white;
+    padding: 200px 200px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transform: translateX(650px) translateY(150px);
+    background-image: url('img/Higher.png');
+    background-size: 400px 400px;
+    background-position:center;
+}
+footer{
+    text-align: center;
+    margin-top: 250px;
+}
